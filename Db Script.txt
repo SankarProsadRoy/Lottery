@@ -1,0 +1,50 @@
+select * from Coupon_ListDetails
+select * from Prize_List
+Select * from TestExl
+--Delete  from TestExl
+select COUNT (*) from Prize_List
+select * from Prize_List where Coupon_No is not null
+select COUNT (*) from Coupon_ListDetails
+
+Update Prize_List set Coupon_No= null;
+
+Update Prize_List set Status= null;
+
+---Backup Create New Table--
+SELECT * INTO Prize_List2018 FROM Prize_List WHERE 1 = 1;
+select * from Prize_List2018;
+--delete from Prize_List
+
+--delete from Coupon_ListDetails ;
+select COUNT(*) from Coupon_ListDetails;
+select * from Coupon_ListDetails order by COUPON_NO;
+select * from Coupon_ListDetails where COUPON_NO is null;
+select * from Coupon_ListDetails where COMPANY_GROUP_NAME is null;
+
+select * from Prize_List where Status is not null 
+
+select * from Prize_List where Coupon_No is not null 
+
+select * from Prize_List order by Prize_ID
+select COUNT(*) from  Prize_List
+
+----------dafinal back
+SELECT * INTO Prize_List2019_1 FROM Prize_List WHERE 1 = 1;
+select * from Prize_List2018;
+
+
+select * from TestExl
+
+
+----------------------------------------
+INSERT INTO TestExl
+
+SELECT b.Prize_ID ,b.Prize_Name, a.COUPON_NO,a.FIRST_NAME,a.LAST_NAME,a.DEPARTMENT,a.LOCATION,a.COMPANY_GROUP_NAME from Coupon_ListDetails a,Prize_List b where a.COUPON_NO=b.coupon_no order by b.Prize_ID,a.COUPON_NO
+
+
+Select * from TestExl
+
+--Delete from TestExl
+
+
+select * from TestExl
